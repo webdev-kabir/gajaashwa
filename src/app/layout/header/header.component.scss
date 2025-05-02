@@ -1,0 +1,127 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  /* Top Bar */
+  .top-bar {
+    background-color: #1e2342;
+    color: white;
+    font-size: 13px;
+    padding: 8px 0;
+  }
+  
+  .top-bar .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  
+  .top-bar .info i {
+    margin-right: 5px;
+  }
+  
+  /* Main Header */
+  .main-header {
+    background-color: white;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .brand-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f24c27;
+  }
+  
+  nav {
+    margin-left: auto;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  nav ul li a.active {
+    color: blue;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  
+  .hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #000;
+    margin: 4px 0;
+    transition: 0.3s;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    nav {
+      display: none;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background: white;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+    }
+  
+    nav.active {
+      display: block;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    .top-bar .info {
+      justify-content: center;
+    }
+  }
+  
