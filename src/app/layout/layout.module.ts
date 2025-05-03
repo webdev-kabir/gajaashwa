@@ -30,6 +30,7 @@ import { AppRoutingModule } from '../app-routing.module';
     MatDividerModule,
     MatIconModule,
     AppRoutingModule,
+    MatIconModule
   ]
 })
 export class LayoutModule { }
