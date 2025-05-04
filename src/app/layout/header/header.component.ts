@@ -7,6 +7,15 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-
   menuOpen = false;
+
+  // Close menu when clicking outside
+  constructor() {
+    window.addEventListener('click', (e) => {
+      const target = e.target as HTMLElement;
+      if (!target.closest('.hamburger') && !target.closest('nav')) {
+        this.menuOpen = false;
+      }
+    });
+  }
 }

@@ -80,7 +80,7 @@ export class HomeComponent implements OnInit , AfterViewInit {
         'Testimonials available for verification',
       ]
     },
-    // Duplicate or add more custom entries as needed
+    
     {
       image: 'http://gajaashwa.com/Images/HomePage/670c66936da64918e9044bf99b6fed9f.jpg',
       title: 'Client Feedback',
@@ -111,7 +111,6 @@ export class HomeComponent implements OnInit , AfterViewInit {
         'Client-centric process',
       ]
     }
-    // Add 5 more if you want a total of 7
   ];
   constructor() {}
 

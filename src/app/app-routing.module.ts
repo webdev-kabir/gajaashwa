@@ -13,6 +13,14 @@ const childrenRoutes: Routes = [
     path: '',
     loadChildren: () => import('./homepage/homepage.module').then(m => m.HomepageModule)
   },
+  {
+    path: 'about-us',
+    loadComponent: () => import('./about-us/about-us.component').then(m => m.AboutUsComponent)
+  },
+  {
+    path: 'contact-us',
+    loadComponent: () => import('./contact-us/contact-us.component').then(m => m.ContactUsComponent)
+  }
 ];
 const routes: Routes = [
   {

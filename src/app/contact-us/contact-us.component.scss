@@ -1,0 +1,135 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .contact-section {
+    background-color: #f8f8f8;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .header h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  .header h4 .dark {
+    color: #1d2d50; /* Navy */
+  }
+  
+  .header h4 .gold {
+    color: #bfa36f; /* Gold */
+  }
+  
+  .header h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #7a7a7a;
+  }
+  
+  /* Form Styling */
+  .contact-form {
+    background-color: #fff;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 6px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  }
+  
+  .form-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group i {
+    margin-right: 10px;
+    color: #ccc;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    color: #333;
+    background-color: transparent;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .form-group:focus-within {
+    border-color: #bfa36f; /* Gold */
+  }
+  
+  .btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  button[type="submit"] {
+    background: transparent;
+    border: 1px solid #bfa36f;
+    color: #bfa36f;
+    padding: 10px 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #bfa36f;
+    color: #fff;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .header h2 {
+      font-size: 28px;
+    }
+  
+    .contact-form {
+      padding: 20px;
+    }
+  
+    .form-group input,
+    .form-group textarea {
+      font-size: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header h2 {
+      font-size: 24px;
+    }
+  
+    button[type="submit"] {
+      width: 100%;
+    }
+  }
+  

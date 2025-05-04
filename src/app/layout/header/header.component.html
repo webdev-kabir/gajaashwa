@@ -3,8 +3,7 @@
   <div class="top-bar">
     <div class="container">
       <div class="info">
-        <div><mat-icon>location_on</mat-icon> <span>2415 San Ramon Valley Blvd 4-429 San Ramon, CA 94583 - USA</span>
-        </div>
+        <div><mat-icon>location_on</mat-icon> <span>2415 San Ramon Valley Blvd 4-429 San Ramon, CA 94583 - USA</span></div>
         <div><mat-icon>call</mat-icon><span>+1 (925) 955-1045</span></div>
         <div><mat-icon>mail</mat-icon><span>info-gajaashwa.com</span></div>
       </div>
@@ -18,12 +17,12 @@
     </div>
     <nav [class.active]="menuOpen">
       <ul>
-        <li><a routerLink="/home" routerLinkActive="active">HOME</a></li>
-        <li><a routerLink="/about" routerLinkActive="active">ABOUT US</a></li>
-        <li><a routerLink="/contact" routerLinkActive="active">CONTACT US</a></li>
+        <li><a routerLink="/home" routerLinkActive="active" (click)="menuOpen = false">HOME</a></li>
+        <li><a routerLink="/about-us" routerLinkActive="active" (click)="menuOpen = false">ABOUT US</a></li>
+        <li><a routerLink="/contact-us" routerLinkActive="active" (click)="menuOpen = false">CONTACT US</a></li>
       </ul>
     </nav>
-    <div class="hamburger" (click)="menuOpen = !menuOpen">
+    <div class="hamburger" (click)="menuOpen = !menuOpen" [class.active]="menuOpen">
       <span></span><span></span><span></span>
     </div>
   </div>
