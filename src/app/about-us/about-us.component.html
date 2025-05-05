@@ -1,1 +1,32 @@
-<p>about-us works!</p>
+<div class="carousel-wrapper">
+  <h2 class="heading">Why Choose Gajaashwa Inc?</h2>
+
+  <!-- <div class="carousel-window">
+    @for (item of items; track item.title; let i = $index) {
+      <div class="carousel-item"
+           [class.active]="i === currentIndex"
+           [class.second]="i === (currentIndex + 1) % items.length"
+           [class.third]="i === (currentIndex + 2) % items.length">
+        <h3 class="title">{{ item.title }}</h3>
+        <p class="subtitle">{{ item.description }}</p>
+      </div>
+    }
+  </div> -->
+
+  <div class="carousel-window">
+    @for (item of items; track item.title; let i = $index) {
+      <div class="carousel-item"
+           [class.active]="i === currentIndex"
+           [class.second]="i === (currentIndex + 1) % items.length"
+           [class.third]="i === (currentIndex + 2) % items.length"
+           [class.incoming]="i === (currentIndex + 2) % items.length && isAnimating">
+        <h3 class="title">{{ item.title }}</h3>
+        <p class="subtitle">{{ item.description }}</p>
+      </div>
+    }
+  </div>
+  <div class="carousel-controls">
+    <button (click)="prev()"><mat-icon>arrow_back_ios</mat-icon></button>
+    <button (click)="next()"><mat-icon>arrow_forward_ios</mat-icon></button>
+  </div>
+</div>
