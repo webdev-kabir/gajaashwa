@@ -12,15 +12,15 @@ export class HomeComponent implements OnInit , AfterViewInit {
   carouselSlides = [
     {
       image: 'laptop-2.jpg',
-      title: 'Professional Web Development',
-      description: 'The company has a food delivery software product that it offers to small businesses wishing to be in the food business without having a kitchen!',
+      title: 'Grow Your Business with Our Affordable Products and Revenue-Based Fees',
+      description: 'The company offers its products to small to medium size businesses and takes a small fee based on revenues.',
       buttonText: 'View Details',
       buttonLink: '/projects/web-development'
     },
     {
       image: 'driving-school.jpg',
-      title: 'Truck Driving School Website',
-      description: 'The company has a food delivery software product that it offers to small businesses wishing to be in the food business without having a kitchen!',
+      title: 'Streamline Your Training Compliance with Our Hosted Solution',
+      description: 'The company has a hosted solution for the vocational training ndustry to help them comply with several compliance requirements.',
       buttonText: 'Learn More',
       buttonLink: '/projects/truck-school'
     },
@@ -33,8 +33,8 @@ export class HomeComponent implements OnInit , AfterViewInit {
     },
     {
       image: 'truck-teacher.jpg',
-      title: 'Truck Teaching Platform',
-      description: 'The company has a food delivery software product that it offers to small businesses wishing to be in the food business without having a kitchen!',
+      title: 'Increase Your Online Presence with Our Digital Marketing Services',
+      description: 'Maximize your online reach and boost your business growth with our comprehensive digital marketing services',
       buttonText: 'Explore',
       buttonLink: '/projects/truck-teacher'
     }
