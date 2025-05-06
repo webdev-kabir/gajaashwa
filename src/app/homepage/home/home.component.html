@@ -13,12 +13,12 @@
           <!-- Dark overlay with text and button -->
           <div class="image-overlay">
             <div class="overlay-content">
-              <h3 class="overlay-caption">{{ slide.caption }}</h3>
-              <a [routerLink]="slide.buttonLink" class="overlay-button">
-                {{ slide.buttonText }}
-                <mat-icon>arrow_forward</mat-icon>
-              </a>
+              <h3 class="overlay-caption">{{ slide.title }}</h3>
+              <h3 class="overlay-description">{{ slide.description }}</h3>
             </div>
+            <a [routerLink]="slide.buttonLink" class="overlay-button">
+              {{ slide.buttonText }}
+            </a>
           </div>
         </div>
       </ng-template>
@@ -26,12 +26,13 @@
   </div>
 </div>
 
-<div style="margin: 60px; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+<div class="info-card-container">
   <app-info-card
     *ngFor="let item of testimonialData"
     [image]="item.image"
     [title]="item.title"
     [description]="item.description"
     [points]="item.points"
+    [redirectTo]="item.redirectTo"
   ></app-info-card>
 </div>

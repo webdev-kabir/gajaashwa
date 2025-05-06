@@ -2,7 +2,7 @@
     <div class="image-wrapper">
       <img [src]="image" [alt]="title + ' image'" class="testimonial-image" />
       <div class="image-overlay">
-        <button class="read-more-btn">READ MORE</button>
+        <button class="read-more-btn" [routerLink]="redirectTo">READ MORE</button>
       </div>
     </div>
   

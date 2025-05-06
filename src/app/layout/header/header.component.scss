@@ -4,7 +4,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.left-divider{
+  border-left: 1px solid #474d6b;
+  padding-left: 15px;
+}
 header {
   font-family: Arial, sans-serif;
   position: relative;
@@ -62,6 +65,7 @@ header {
   height: 60px;
   width: auto;
   max-width: 100%;
+  cursor: pointer;
 }
 
 nav {
@@ -213,6 +217,9 @@ nav ul li a {
 }
 
 @media (max-width: 576px) {
+  .left-divider{
+    border-left: none;
+  }
   .top-bar .info {
     flex-direction: column;
     align-items: center;

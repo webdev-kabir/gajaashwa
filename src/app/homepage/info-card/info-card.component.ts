@@ -11,4 +11,5 @@ export class InfoCardComponent {
   @Input() title!: string;
   @Input() description!: string;
   @Input() points!: string[];
+  @Input() redirectTo!: string;
 }

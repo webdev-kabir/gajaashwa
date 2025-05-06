@@ -7,29 +7,34 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
+
 export class HomeComponent implements OnInit , AfterViewInit {
   carouselSlides = [
     {
-      image: 'http://gajaashwa.com/Images/HomePage/fbdc8e206ce4c831e322b8cbcd160b77.jpg',
-      caption: 'Professional Web Development',
+      image: 'laptop-2.jpg',
+      title: 'Professional Web Development',
+      description: 'The company has a food delivery software product that it offers to small businesses wishing to be in the food business without having a kitchen!',
       buttonText: 'View Details',
       buttonLink: '/projects/web-development'
     },
     {
-      image: 'http://gajaashwa.com/Images/HomePage/truck%20driving%20school%20website.jpg',
-      caption: 'Truck Driving School Website',
+      image: 'driving-school.jpg',
+      title: 'Truck Driving School Website',
+      description: 'The company has a food delivery software product that it offers to small businesses wishing to be in the food business without having a kitchen!',
       buttonText: 'Learn More',
       buttonLink: '/projects/truck-school'
     },
     {
-      image: 'http://gajaashwa.com/Images/HomePage/resturan.jpg',
-      caption: 'Restaurant Showcase',
-      buttonText: 'See Project',
+      image: 'resturant.jpg',
+      title: 'Revolutionize your food Business with our innovative delivery software',
+      description: 'The company has a food delivery software product that it offers to small businesses wishing to be in the food business without having a kitchen!',
+      buttonText: 'About Us...',
       buttonLink: '/projects/restaurant'
     },
     {
-      image: 'http://gajaashwa.com/Images/HomePage/truch%20teacher.jpg',
-      caption: 'Truck Teaching Platform',
+      image: 'truck-teacher.jpg',
+      title: 'Truck Teaching Platform',
+      description: 'The company has a food delivery software product that it offers to small businesses wishing to be in the food business without having a kitchen!',
       buttonText: 'Explore',
       buttonLink: '/projects/truck-teacher'
     }
@@ -69,47 +74,50 @@ export class HomeComponent implements OnInit , AfterViewInit {
     rewind: false,  // Turn off rewind since we're using loop
   };
 
-  testimonialData = [
+  testimonialData = [    
     {
-      image: 'http://gajaashwa.com/Images/HomePage/2a6df69bd686fffea2f99b3c0fac13e8.jpg',
+      image: 'laptop.jpg',
+      title: 'About Us',
+      description: 'We create beautiful and modern websites that are optimized for performance and user experience.',
+      points: [
+        'Gajaashwa, Inc was incorporated in June 2005.',
+        'Gajaashwa, Inc has advisors with experience in various industries.',
+        'With over 15 years of experience, Gajaashwa, Inc is committed to delivering high-quality software solutions to its clients',
+      ],
+      redirectTo: '/about-us'
+    },
+    {
+      image: 'laptop-2.jpg',
+      title: 'Products and Services',
+      description: 'We provide web development solutions and food delivery website software as our products and services.',
+      points: [
+        'Web development solutions',
+        'Food delivery website software',
+        'Other digital products and services',
+      ],
+      redirectTo: '/'
+    },
+    {
+      image: 'laptop-3.jpg',
+      title: 'FAQ(s)',
+      description: 'What questions would you like to include in your FAQ section for web development solutions and food delivery website software?',
+      points: [
+        'What technologies and programming languages do you use to develop websites and web applications?????',
+        'Can I customize the food delivery website software to suit my business needs?',
+        'Do you provide ongoing support and maintenance for the websites and web applications you develop?',
+      ],
+      redirectTo: '/'
+    },
+    {
+      image: 'group.jpg',
       title: 'Testimonials',
       description: 'Our customers are satisfied with our web development solutions and food delivery website software. Check out our testimonials!',
       points: [
         'Customer satisfaction',
         'Web development and food delivery software solutions are well-received',
         'Testimonials available for verification',
-      ]
-    },
-    
-    {
-      image: 'http://gajaashwa.com/Images/HomePage/670c66936da64918e9044bf99b6fed9f.jpg',
-      title: 'Client Feedback',
-      description: 'We provide excellent results for our clients.',
-      points: [
-        'Excellent results',
-        'Efficient delivery',
-        'Client-centric process',
-      ]
-    },
-    {
-      image: 'http://gajaashwa.com/Images/HomePage/fbdc8e206ce4c831e322b8cbcd160b77.jpg',
-      title: 'Client Feedback',
-      description: 'We provide excellent results for our clients.',
-      points: [
-        'Excellent results',
-        'Efficient delivery',
-        'Client-centric process',
-      ]
-    },
-    {
-      image: 'http://gajaashwa.com/Images/HomePage/a41d474e-f175-4d0e-a426-1d6cb0948ad6.jpg',
-      title: 'Client Feedback',
-      description: 'We provide excellent results for our clients.',
-      points: [
-        'Excellent results',
-        'Efficient delivery',
-        'Client-centric process',
-      ]
+      ],
+      redirectTo: '/'
     }
   ];
   constructor() {}

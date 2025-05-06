@@ -9,7 +9,6 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   menuOpen = false;
 
-  // Close menu when clicking outside
   constructor() {
     window.addEventListener('click', (e) => {
       const target = e.target as HTMLElement;
